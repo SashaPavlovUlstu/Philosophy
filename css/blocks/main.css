@@ -1,0 +1,79 @@
+.main {
+  max-width: 1440px;
+  margin: 40px auto;
+}
+.main__container {
+  max-width: 1300px;
+  display: flex;
+  justify-content: center;
+}
+.main__photo {
+  margin-right: 60px;
+}
+.main__photo-img {
+  width: 650px;
+  height: 873.44px;
+  border-radius: 12px;
+}
+.main__information {
+  margin-top: 163px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main__information-text {
+  color: rgb(255, 255, 255);
+  font-family: DM Sans, sans-serif;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 88px;
+  letter-spacing: 3.2px;
+  text-align: left;
+}
+.main__information__socials {
+  margin-top: 90px;
+  margin-left: 22px;
+}
+.main__information__socials-list {
+  display: flex;
+}
+.main__information__socials-link {
+  width: 31.9px;
+  height: 31.9px;
+  border-radius: 50px;
+}
+.main__information__socials-item {
+  margin: 16.79px 3.55px;
+}
+
+.socials-text {
+  color: rgb(255, 255, 255);
+  font-family: DM Sans;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.suptext {
+  color: rgb(255, 255, 255);
+  font-family: DM Sans;
+  font-size: 75px;
+  font-weight: 400;
+  line-height: 88px;
+  letter-spacing: 3.2px;
+  text-align: left;
+}
+
+.suptext2 {
+  color: rgb(255, 255, 255);
+  font-family: DM Sans;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: 3.2px;
+  text-align: left;
+}
+
+/*# sourceMappingURL=main.css.map */

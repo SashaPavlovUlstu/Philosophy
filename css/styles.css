@@ -1,0 +1,315 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background-color: var(--main-gray);
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+  background-color: var(--main-gray);
+}
+.header__container {
+  max-width: 1440px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo-logo {
+  margin: auto 0;
+  color: white;
+  font-size: 34px;
+}
+.header__navbar-list {
+  display: flex;
+}
+.header__navbar-item {
+  margin: 20px 40px;
+}
+.header__navbar-link {
+  font-family: "DM Sans", sans-serif;
+  font-size: 17px;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 27px;
+  letter-spacing: 0px;
+  transition: color;
+}
+.header__navbar-link:hover {
+  color: var(--text-hover);
+  animation: 0.3s ease-in-out;
+}
+
+:root {
+  --main-gray:rgb(25, 25, 25);
+  --text-hover:rgb(17, 141, 168);
+  --black:rgb(0, 0, 0);
+  --gray-text:rgba(255, 255, 255, 0.7);
+}
+
+.main {
+  max-width: 1440px;
+  margin: 40px auto;
+}
+.main__container {
+  max-width: 1300px;
+  display: flex;
+  justify-content: center;
+}
+.main__photo {
+  margin-right: 60px;
+}
+.main__photo-img {
+  width: 650px;
+  height: 873.44px;
+  border-radius: 12px;
+}
+.main__information {
+  margin-top: 163px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main__information-text {
+  color: rgb(255, 255, 255);
+  font-family: DM Sans, sans-serif;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 88px;
+  letter-spacing: 3.2px;
+  text-align: left;
+}
+
+.suptext {
+  color: rgb(255, 255, 255);
+  font-family: DM Sans;
+  font-size: 75px;
+  font-weight: 400;
+  line-height: 88px;
+  letter-spacing: 3.2px;
+  text-align: left;
+}
+
+.suptext2 {
+  color: rgb(255, 255, 255);
+  font-family: DM Sans;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: 3.2px;
+  text-align: left;
+}
+
+.episodes {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.episodes__container {
+  margin-top: 92px;
+  max-width: 1400px;
+  margin-bottom: 160px;
+}
+.episodes__header {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+.episodes__header-text {
+  color: rgb(255, 255, 255);
+  font-family: DM Sans, sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 79.2px;
+  letter-spacing: 2.88px;
+  text-align: left;
+}
+.episodes #i2 {
+  width: 136px;
+}
+.episodes__card {
+  max-width: 1400px;
+  background-color: var(--black);
+  border-radius: 12px;
+}
+.episodes__card__inner {
+  max-width: 1300px;
+  margin: 40px auto;
+  display: flex;
+}
+.episodes__card-img {
+  margin: 40px 0;
+  width: 389px;
+  height: 465px;
+}
+.episodes__card__information {
+  margin-top: 40px;
+  display: flex;
+  margin-left: 53px;
+  flex-direction: column;
+}
+.episodes__card__information-link {
+  color: rgb(255, 255, 255);
+  font-family: DM Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0px;
+  text-align: left;
+  text-decoration: none;
+  padding: 0 16px;
+  display: inline-block;
+  width: 83px;
+  border-radius: 6px;
+  background-color: var(--main-gray);
+}
+.episodes__card__information-episode {
+  margin-top: 48px;
+  margin-bottom: 17.56px;
+  color: var(--text-hover);
+  font-family: DM Sans, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0px;
+  text-decoration: none;
+  text-align: left;
+}
+.episodes__card__information-header {
+  color: rgb(255, 255, 255);
+  font-family: DM Sans, sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 70.4px;
+  letter-spacing: 2.56px;
+  text-align: left;
+}
+.episodes__card__information-text {
+  margin-top: 28px;
+  color: var(--gray-text);
+  font-family: DM Sans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.episodes__card__information-button {
+  margin-top: 18px;
+  color: rgb(255, 255, 255);
+  font-family: DM Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0px;
+  text-align: left;
+  text-decoration: none;
+  padding: 12px 15px 12px 20px;
+  border-radius: 12px;
+  width: 208px;
+  background-color: var(--text-hover);
+}
+
+.text__container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 92px;
+  max-width: 1400px;
+  justify-content: center;
+  margin: 0 auto;
+}
+.text-header {
+  margin: 0 auto;
+  color: white;
+  width: 70px;
+  font-size: 48px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.text-text {
+  text-align: justify;
+  margin: 0 auto;
+  font-size: 24px;
+  text-indent: 6%;
+  width: 83%;
+  padding: 3%;
+  padding-left: 4%;
+  padding-right: 4%;
+  border-radius: 50px;
+  height: auto;
+  color: white;
+  border: 1px solid white;
+}
+
+.buttons__container {
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  height: 50px;
+  margin-bottom: 50px;
+}
+
+.btn-link {
+  font-family: "DM Sans", sans-serif;
+  font-size: 17px;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 50px;
+  letter-spacing: 0px;
+  transition: color;
+}
+.btn-link:hover {
+  color: var(--text-hover);
+  animation: 0.3s ease-in-out;
+}
+
+/*# sourceMappingURL=styles.css.map */

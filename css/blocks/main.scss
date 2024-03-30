@@ -1,0 +1,57 @@
+.main{
+
+  max-width: 1440px;
+  margin: 40px auto;
+
+  &__container{
+    max-width: 1300px;
+
+    display: flex;
+    justify-content: center;
+  }
+  &__photo{
+    margin-right:60px;
+    &-img{
+      width:650px;
+      height: 873.44px;
+      border-radius:12px;
+    }
+  }
+  &__information{
+    margin-top: 163px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &-text{
+      color: rgb(255, 255, 255);
+
+      font-family: DM Sans,sans-serif;
+      font-size: 70px;
+      font-weight: 400;
+      line-height: 88px;
+      letter-spacing: 3.2px;
+      text-align: left;
+    }
+
+  }
+}
+
+
+.suptext{
+  color: rgb(255, 255, 255);
+  font-family: DM Sans;
+  font-size: 75px;
+  font-weight: 400;
+  line-height: 88px;
+  letter-spacing: 3.2px;
+  text-align: left;
+}
+.suptext2{
+  color: rgb(255, 255, 255);
+  font-family: DM Sans;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: 3.2px;
+  text-align: left;
+}

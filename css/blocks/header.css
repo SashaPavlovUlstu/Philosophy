@@ -1,0 +1,37 @@
+.header {
+  background-color: var(--main-gray);
+}
+.header__container {
+  max-width: 1440px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo-logo {
+  margin: auto 0;
+  color: white;
+  font-size: 34px;
+}
+.header__navbar-list {
+  display: flex;
+}
+.header__navbar-item {
+  margin: 20px 40px;
+}
+.header__navbar-link {
+  font-family: "DM Sans", sans-serif;
+  font-size: 17px;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 27px;
+  letter-spacing: 0px;
+  transition: color;
+}
+.header__navbar-link:hover {
+  color: var(--text-hover);
+  animation: 0.3s ease-in-out;
+}
+
+/*# sourceMappingURL=header.css.map */
