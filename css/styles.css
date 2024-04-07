@@ -1,84 +1,16 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -88,17 +20,8 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -107,20 +30,16 @@ body {
   background-color: var(--main-gray);
 }
 
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after,
+q:before, q:after {
   content: "";
   content: none;
 }
@@ -167,10 +86,10 @@ table {
 }
 
 :root {
-  --main-gray: rgb(25, 25, 25);
-  --text-hover: rgb(17, 141, 168);
-  --black: rgb(0, 0, 0);
-  --gray-text: rgba(255, 255, 255, 0.7);
+  --main-gray:rgb(25, 25, 25);
+  --text-hover:rgb(17, 141, 168);
+  --black:rgb(0, 0, 0);
+  --gray-text:rgba(255, 255, 255, 0.7);
 }
 
 .main {
@@ -366,6 +285,7 @@ table {
   height: auto;
   color: white;
   border: 1px solid white;
+  line-height: 20px;
 }
 
 .buttons__container {
@@ -391,6 +311,139 @@ table {
 .btn-link:hover {
   color: var(--text-hover);
   animation: 0.3s ease-in-out;
+}
+
+.crosswords {
+  max-width: 900px;
+  margin-top: 200px;
+  margin: 0 auto;
+}
+.crosswords__container {
+  max-width: 1300px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 423px);
+  grid-template-rows: repeat(2, 364px);
+  gap: 16px;
+}
+.crosswords__card {
+  background-color: var(--black);
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.crosswords__card-text {
+  margin-top: 21px;
+  color: rgb(255, 255, 255);
+  font-family: DM Sans;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43.2px;
+  letter-spacing: 0px;
+  text-align: left;
+  text-decoration: none;
+  margin-left: 50px;
+  max-width: 317px;
+}
+.crosswords__card-link {
+  margin-top: 19px;
+  color: var(--gray-text);
+  font-family: DM Sans;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 28.8px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-left: 50px;
+}
+
+body {
+  font: 62.5%/1.3em Helvetica, sans-serif;
+  width: 90.3%;
+  margin: 10px auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  max-width: 100%;
+}
+
+table tr {
+  width: 100%;
+}
+
+table td {
+  width: 5em;
+  border: 1px solid #cdcdcd;
+  padding: 0;
+  margin: 0;
+  background-color: #333;
+  position: relative;
+}
+
+td input {
+  width: 100%;
+  height: 100%;
+  padding: 0em;
+  border: none;
+  text-align: center;
+  font-size: 3em;
+  color: #666;
+  background-color: #f4f4f4;
+}
+
+td input:focus {
+  background-color: #fff;
+}
+
+td span {
+  color: #444;
+  font-size: 14px;
+  position: absolute;
+  top: 15px;
+  left: 1px;
+}
+
+input.done {
+  font-weight: bold;
+  color: green;
+}
+
+h2 {
+  font-size: 24px;
+  color: Gray;
+}
+
+.active,
+.clues-active {
+  background-color: black;
+}
+
+.clue-done {
+  color: #999;
+  text-decoration: line-through;
+}
+
+#puzzle-wrapper {
+  float: left;
+  width: 54%;
+  margin-right: 3%;
+}
+
+#puzzle-clues {
+  float: left;
+  width: 40%;
+}
+
+#puzzle-clues li {
+  font-size: 24px;
+  margin: 0.3em;
+  line-height: 1.6em;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
