@@ -85,6 +85,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  line-height: 1.5;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -141,6 +142,8 @@ table {
   align-items: center;
 }
 .header__logo-logo {
+  font-weight: bold;
+  font-style: italic;
   margin: auto 0;
   color: white;
   font-size: 34px;
@@ -299,6 +302,12 @@ table {
   width: 389px;
   height: 465px;
 }
+.dop_usl {
+  min-width: 389px;
+  min-height: 465px;
+  max-width: 389px;
+  max-height: 465px;
+}
 .episodes__card__information {
   margin-top: 40px;
   display: flex;
@@ -359,11 +368,11 @@ table {
   font-weight: 400;
   line-height: 27px;
   letter-spacing: 0px;
-  text-align: left;
+  text-align: center;
   text-decoration: none;
   padding: 12px 15px 12px 20px;
   border-radius: 12px;
-  width: 208px;
+  width: 140px;
   background-color: var(--text-hover);
 }
 
@@ -378,12 +387,14 @@ table {
 .text-header {
   margin: 0 auto;
   color: white;
-  width: 70px;
   font-size: 48px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 .text-text {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 1.5px;
+  word-spacing: 2.5px;
   text-align: justify;
   margin: 0 auto;
   font-size: 24px;
